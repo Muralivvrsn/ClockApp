@@ -1,27 +1,84 @@
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #99FAEF;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  flex-flow: column;
+  height: 380px;
+  align-items: center;
+  background-color: rgba(0,0,0,0.9);
 }
-
-.App-link {
-  color: #61dafb;
+.clock-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
-
-
+.box{
+  display: flex;
+  width: 10%;
+  height: 195px;
+}
+#top,#bottom,#topleft,#topright,#bottomleft,#bottomright,#mid{
+  margin: auto;
+  width: 75px;
+  height: 10px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: absolute;
+}
+#mid{
+  border-radius: 30px;
+  margin-top: 90px;
+}
+#bottom{
+  transform: rotate(180deg);
+  margin-top: 179px;
+}
+#topleft,#topright{
+  margin-top: 45px;
+}
+#bottomleft,#bottomright{
+  margin-top: 135px;
+}
+#topleft,#bottomleft{
+  transform: rotate(270deg);
+  margin-left: -35px;
+}
+#topright,#bottomright{
+  transform: rotate(90deg);
+  margin-left: 35px;
+}
+span{
+  font-size: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-style: normal;
+  color: rgba(0,0,0,0.2);
+  transform: scale(2.5,4);
+}
+.Green{
+  background-color: rgba(255,255,255,0.6);
+}
+.Black{
+  background-color: rgba(0,0,0,0.1);
+}
+.Red{
+  background-color: rgba(255,0,0,0.6);
+}
+nav{
+  margin-top: 30px;
+  margin-bottom: 70px;
+  font-family: 'Roboto Mono', monospace;
+}
+a{
+  margin: 0 30px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.9);
+  border-radius: 5px;
+  transform: scale(1.2,1.2);
+  padding: 10px;
+}
+a:hover{
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.5);
+  transition: 1s;
+}
